@@ -1,3 +1,3 @@
 # SiGAP
 
-Aplikasi Siaga Bencana di Kota Semarang 
+Aplikasi Siaga Bencana di Kota Semarang.
