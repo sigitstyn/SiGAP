@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "997570035930",
+    "project_id": "sigap-bpbd",
+    "storage_bucket": "sigap-bpbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997570035930:android:ce83f4312580d0bb17e5e3",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997570035930-cjj33o2qprs7b7o0tof9d0d6o8ppu68o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChDai1H38ScKGayEJAIveuUX_bwaAKIao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997570035930-cjj33o2qprs7b7o0tof9d0d6o8ppu68o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

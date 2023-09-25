@@ -1,0 +1,18 @@
+ion-content{
+  div{
+    ion-item{
+      ion-label{
+        font-family: 'Trebuchet MS';
+        font-size: smaller;
+      }
+      ion-input{
+        font-size: small;
+        font-family: 'Trebuchet MS';
+      }
+      ion-textarea{
+        font-size: smaller;
+        font-family: 'Trebuchet MS';
+      }
+    }
+  }
+}

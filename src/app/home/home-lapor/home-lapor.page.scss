@@ -1,0 +1,23 @@
+ion-header{
+  ion-toolbar{
+    --background: #ebe7e0;
+    ion-title{
+      font-family: 'Segoe UI';
+    }
+  }
+}
+img{
+  height: 70px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+}
+ion-button{
+
+  display: block;
+  margin-top: 20px;
+}
+ion-select{
+  margin-left: 10px;
+}

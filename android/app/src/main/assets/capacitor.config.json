@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "SiGAP",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

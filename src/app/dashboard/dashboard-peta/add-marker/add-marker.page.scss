@@ -1,0 +1,26 @@
+ion-toolbar{
+  --background: #ebe7e0;
+  font-family:'Segoe UI';
+}
+ion-content{
+  --background: #ebe7e0;
+  ion-header{
+    margin-left: 10px;
+    p{
+      font-size: small;
+    }
+  }
+  ion-list{
+    font-family: 'Gill Sans';
+    ion-item{
+      ion-label{
+        font-size: small;
+      }
+      ion-input{
+        font-size: medium;
+      }
+    }
+  }
+
+}
+

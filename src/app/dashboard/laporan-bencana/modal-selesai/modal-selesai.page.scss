@@ -1,0 +1,54 @@
+
+ion-header{
+  height: 10%;
+  ion-toolbar{
+    ion-title{
+      font-size: large;
+      font-family: Trebuchet MS;
+    }
+  }
+}
+
+ion-content{
+  div{
+    ion-card{
+      ion-card-title{
+        margin-top: 5%;
+        font-family: Trebuchet MS;
+        margin-bottom: 5%;
+
+      }
+      ion-card-subtitle{
+        margin-top: -8%;
+        margin-left: 2%;
+        font-size: x-small;
+      }
+      ion-row{
+        ion-col{
+          margin-bottom: -5px;
+          ion-item{
+            ion-label{
+              font-size: smaller;
+              justify-content: center;
+            }
+            ion-input{
+              font-size: smaller;
+            }
+          }
+
+        }
+      }
+      ion-item{
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        label{
+          align-items: center;
+        }
+
+
+      }
+    }
+
+
+  }
+}

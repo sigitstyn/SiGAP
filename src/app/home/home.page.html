@@ -1,0 +1,68 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>HOME</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen class="ion-padding" scroll-y="false">
+    <ion-slides>
+      <ion-slide>
+        <div class="slide">
+          <img src="assets\Slider\Female hands.png" />
+          <h2>Welcome</h2>
+          <p>
+            Aplikasi <b> SiGAP</b>
+            merupakan aplikasi untuk siaga terhadap bencana khususnya yang terjadi di Kota Semarang.
+          </p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets\Slider\system.png" />
+        <h2>Terjadi Bencana?</h2>
+        <p>
+          <b>Segera Laporkan</b> kamu dapat melaporkannya dengan mudah.
+        </p>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets\Slider\idea.png" />
+        <h2>Bingung saat ada Bencana?</h2>
+        <p>
+          <b>Gampang !</b>
+          bisa lihat panduan saat ada bencana sesuai dengan yang terjadi.
+        </p>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/lapor.png" />
+        <h2>Laporkan Sekarang?</h2>
+        <ion-button fill="clear" routerLink="/home/home-lapor">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      </ion-slide>
+    </ion-slides>
+  <ion-tabs position="fixed">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/home/home-lapor">
+        <ion-icon size="large" name="warning-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/home/home-berita">
+        <ion-icon size="large" name="pulse-outline" ></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/home/home-petabencana">
+        <ion-icon size="large" name="map-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/home/home-panduan">
+        <ion-icon size="large" name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
+
+
+
+
+

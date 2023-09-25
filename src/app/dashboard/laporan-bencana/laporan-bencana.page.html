@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>LAPORAN BENCANA</ion-title>
+  </ion-toolbar>
+  <ion-segment  class="segment-wrapper" [(ngModel)]="selectTabs">
+    <ion-segment-button value="0">
+      <ion-label>Setujui</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      <ion-label>Diproses</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Selesai</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="selectTabs === '0'">
+    <ion-card *ngFor="let disaster of myData" (click)="openDisaster(disaster)">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <ion-card-title>
+              <ion-label>{{ disaster.jenisBencana}}</ion-label>
+            </ion-card-title>
+          </ion-col>
+          <ion-col size="7">
+            <ion-card-subtitle>
+              <ion-icon name="time-sharp"></ion-icon>
+              <ion-label>   {{ disaster.createdAt}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-card-subtitle>
+              <ion-icon name="location-sharp"></ion-icon>
+              <ion-label>   {{ disaster.searchKey}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-card>
+  </div>
+  <div *ngIf="selectTabs === '1'">
+    <ion-card *ngFor="let disaster of myProses" (click)="prosesDisaster(disaster)">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <ion-card-title>
+              <ion-label>{{ disaster.jenisBencana}}</ion-label>
+            </ion-card-title>
+          </ion-col>
+          <ion-col size="7">
+            <ion-card-subtitle>
+              <ion-icon name="time-sharp"></ion-icon>
+              <ion-label>   {{ disaster.createdAt}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-card-subtitle>
+              <ion-icon name="location-sharp"></ion-icon>
+              <ion-label>   {{ disaster.searchKey}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-card>
+  </div>
+  <div *ngIf="selectTabs === '2'">
+    <ion-card *ngFor="let disaster of mySelesai" (click)="selesaiDisaster(disaster)">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <ion-card-title>
+              <ion-label>{{ disaster.jenisBencana}}</ion-label>
+            </ion-card-title>
+          </ion-col>
+          <ion-col size="7">
+            <ion-card-subtitle>
+              <ion-icon name="time-sharp"></ion-icon>
+              <ion-label>   {{ disaster.createdAt}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-card-subtitle>
+              <ion-icon name="location-sharp"></ion-icon>
+              <ion-label>   {{ disaster.searchKey}}</ion-label>
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-card>
+  </div>
+
+
+
+</ion-content>

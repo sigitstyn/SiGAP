@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src="assets/logo.png"/>
+    <h1>WELCOME</h1>
+    <h2>Semarang Siaga Bencana</h2>
+  </div>
+    <p>Sign in to continue as Admin</p>
+
+    <ion-card>
+        <ion-item lines="full">
+          <ion-label position="floating"><ion-icon name="mail-outline"></ion-icon> Email</ion-label>
+          <ion-input type="text" #email required placeholder="example@sigap.com"></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon> Password</ion-label>
+
+          <ion-input type="password" #password required placeholder="******"></ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div id="forgot">
+        <a routerLink="/login/password-reset">forgot password ?</a>
+      </div>
+
+      <ion-button shape="round"
+                  type="submit"
+                  expand="block"
+                  fill="solid"
+                  (click)="logIn(email, password)">
+                  LOGIN
+      </ion-button>
+
+</ion-content>

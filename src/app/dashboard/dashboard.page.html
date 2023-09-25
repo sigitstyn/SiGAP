@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar  >
+     <ion-title slot="start">DASHBOARD</ion-title>
+        <ion-buttons slot="end">
+          <ion-card>
+            <ion-button class="ion-no-margin" ion-button icon-only (click)="logout()">
+              <ion-icon size="large" name="log-out-outline" color="danger"></ion-icon>
+            </ion-button><br>
+
+          </ion-card>
+        </ion-buttons>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+  <ion-item >
+      <img src="assets/logo.png" class="center">
+
+  </ion-item>
+    <h3>Semarang Siaga Bencana</h3>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card >
+            <ion-tab-button routerLink="/dashboard/dashboard-petabencana">
+              <ion-icon color="primary" size="large" name="map-outline"></ion-icon>
+              <ion-label>Peta Bencana</ion-label>
+            </ion-tab-button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-tab-button routerLink="/dashboard/dashboard-panduan">
+              <ion-icon color="primary" size="large" name="help-circle-outline"></ion-icon>
+              <ion-label>Panduan Bencana</ion-label>
+            </ion-tab-button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="6">
+          <ion-card>
+            <ion-tab-button routerLink="/dashboard/laporan-bencana">
+              <ion-icon color="danger" size="large" name="pulse-outline"></ion-icon>
+              <ion-label>Laporan Bencana</ion-label>
+            </ion-tab-button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

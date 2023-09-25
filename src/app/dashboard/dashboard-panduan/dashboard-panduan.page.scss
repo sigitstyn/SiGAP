@@ -1,0 +1,21 @@
+ion-header{
+  ion-toolbar{
+    --background: #ebe7e0;
+    ion-title{
+      font-family: 'Segoe UI';
+    }
+  }
+
+}
+ion-content{
+  p{
+    font-size: smaller;
+  }
+  ion-list{
+    ion-item{
+      ion-label{
+        font-size: small;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+ion-header{
+  ion-toolbar{
+    --background: #ebe7e0;
+    ion-title{
+      font-family: 'Segoe UI';
+    }
+  }
+}
+ion-content{
+  ion-card{
+    ion-card-title{
+      font-size: large;
+      margin-left: 5%;
+      margin-top: 2%;
+      font-family: 'Trebuchet MS';
+    }
+    ion-card-subtitle{
+      font-size: x-small;
+      justify-content: center;
+      margin-left: 3%;
+      margin-bottom: 1%;
+      font-family: 'Trebuchet MS';
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary" fill="clear">
+    <ion-title slot="start">Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="note">
+    <ion-item>
+      <ion-label position="stacked">Jenis Bencana</ion-label>
+      <ion-input [(ngModel)]="note.title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea [(ngModel)]="note.text" rows="20"></ion-textarea>
+    </ion-item>
+  </div>
+
+</ion-content>

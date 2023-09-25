@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/dashboard/dashboard-peta"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Markers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header class="ion-no-border">
+    <p>Create new KSB marker</p>
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">KSB</ion-label>
+      <ion-input type="text" [(ngModel)]="nameKSB"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lat</ion-label>
+      <ion-input type="text" [(ngModel)]="latitude"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lng</ion-label>
+      <ion-input type="text" [(ngModel)]="longitude"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ketua</ion-label>
+      <ion-input [(ngModel)]="ketuaKSB" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">No. HP</ion-label>
+      <ion-input [(ngModel)]="noKSB" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button type="submit"
+              shape="round"
+              expand="block"
+              fill="solid"
+              (click)="addKSB()">Create</ion-button>
+</ion-content>

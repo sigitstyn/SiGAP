@@ -1,0 +1,8 @@
+{
+  "name": "SiGAP",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

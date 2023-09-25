@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>LAPOR </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating"> Nama Pelapor</ion-label>
+    <ion-input type="text" placeholder="John Lennon" [(ngModel)]="namaPelapor"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> Nomor Telepon</ion-label>
+    <ion-input type="text" placeholder="62" [(ngModel)]="noHP"></ion-input>
+  </ion-item>
+
+    <ion-searchbar placeholder="Search Here" (ionInput)="search()" [(ngModel)]="searchKey"></ion-searchbar>
+    <ion-list *ngIf="places.length > 0" class="autocomplete-address-list common-bg-light" lines="full">
+
+      <div class="list autolist">
+        <ion-item tappable (click)="onClickPickAddress(place.lat, place.lon)" class="item" *ngFor="let place of places">
+          <ion-icon name="location-outline" slot="start"></ion-icon>
+          {{place.display_name}}</ion-item>
+      </div>
+
+    </ion-list>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <div  id="map" style="height: 37%;width: 100%"></div>
+
+  <ion-item>
+    <ion-select size="3" interface="popover" placeholder="Jenis Bencana" [(ngModel)]="jenisBencana">
+      <ion-select-option value="Banjir">Banjir</ion-select-option>
+      <ion-select-option value="Banjir Rob">Banjir Rob</ion-select-option>
+      <ion-select-option value="Tanah Longsor">Tanah Longsor</ion-select-option>
+      <ion-select-option value="Pohon Tumbang">Pohon Tumbang</ion-select-option>
+      <ion-select-option value="Rumah Roboh">Rumah Roboh</ion-select-option>
+      <ion-select-option value="Kebakaran">Kebakaran</ion-select-option>
+      <ion-select-option value="Lain-lain">Lain-lain</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Keterangan</ion-label>
+    <ion-input type="text"[(ngModel)]="keterangan"></ion-input>
+  </ion-item>
+
+
+  <ion-button type="submit"
+              shape="round"
+              expand="block"
+              fill="solid"
+              (click)="laporBencana()" >LAPORKAN</ion-button>
+
+</ion-content>
